@@ -1,6 +1,5 @@
 package com.example.pertemuan6.view
 
-import android.R.attr.id
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -61,9 +60,15 @@ fun FormIsian(
                             selected = false,
                             onClick = {item}
                         )
+                        Text(text = item)
                     }
                 }
             }
+            HorizontalDivider(modifier = Modifier
+                .padding(20.dp)
+                .width(250.dp),
+                thickness = 1.dp,
+                color = Color.Red)
         }
     }
 }
